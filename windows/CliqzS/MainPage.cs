@@ -1,6 +1,7 @@
 using ReactNative;
 using ReactNative.Modules.Core;
 using ReactNative.Shell;
+using RNSqlite2;
 using System.Collections.Generic;
 
 namespace CliqzS
@@ -32,6 +33,8 @@ namespace CliqzS
                 return new List<IReactPackage>
                 {
                     new MainReactPackage(),
+                    new RNSqlite2Package(),
+                    new CliqzPackage()
                 };
             }
         }
